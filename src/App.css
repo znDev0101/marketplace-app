@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
+/* RESET SEDERHANA */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s all linear;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ROOT */
+:root {
+  --color-red: #ed1313;
+}
+/* END ROOT */
+
+body {
+  overflow-x: hidden;
+  height: 1200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* COMPONENT HEADER */
+.iconTopBar a:hover {
+  color: var(--color-red) !important;
+}
+/* END COMPONENT HEADER */
+
+/* COMPONENT NAVBAR */
+.navbar img {
+  width: 10rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.signContent {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.signIn {
+  background-color: var(--color-red);
+}
+
+.signIn:hover {
+  background-color: #a81111;
+}
+
+.signUp {
+  color: var(--color-red);
+}
+
+.signUp:hover {
+  color: #fff;
+  background-color: var(--color-red);
+}
+
+.signContent a {
+  text-decoration: none;
+}
+
+.shoppingCart:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+.shoppingItems {
+  width: 240px;
+  background-color: #fff;
+  top: 42px;
+  right: 0;
+}
+
+.totalShoppingCart a {
+  background-color: var(--color-red);
+}
+
+/* END COMPONENT NAVBAR */
+
+/* COMPONENT SEARCH */
+.inputSearchBar input {
+  width: 65vw;
+  border: 1px solid #adabab;
+}
+
+.iconSearch1 {
+  display: none;
+}
+
+.iconSearch {
+  color: #6c757d;
+  top: 7px;
+  left: 8px;
+}
+.iconClear {
+  color: #6c757d;
+  right: 10px;
+  top: 7px;
+}
+
+.iconSearch:hover {
+  color: #000;
+}
+.iconClear:hover {
+  color: #000;
+}
+
+.searchResult {
+  top: 35px;
+  width: 65vw;
+  height: 400px;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.carousel {
+  margin-top: 200px;
+}
+/* END COMPONENT SEARCH */
+
+/* COMPONENT PROMO CARD PRODUCT */
+.progressContent {
+  background-color: #e5e7e9;
+  width: 100%;
+}
+
+.cardPromoProduct {
+  border-radius: 15px !important;
+  border: none !important;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cardProduct {
+  border-radius: 15px !important;
+  border: none !important;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+/* END COMPONENT PROMO CARD PRODUCT */
+
+/* COMPONENT CARD PRODUCT*/
+.namaProduct {
+  height: 3rem;
+  overflow: hidden;
+}
+/* END COMPONENT CARD PRODUCT*/
+
+/* COMPONENT CARD INPUT ORDER */
+.cardInputOrder {
+  border-radius: 15px !important;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* COMPONENT INPUT ORDER */
+.inputOrder button {
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid #bfc9d9;
+  color: #6c757d;
+  background-color: #fff;
+}
+
+.inputOrder button:hover {
+  color: var(--color-red);
+}
+
+.inputOrder input {
+  width: 5vw;
+  border: 1px solid #bfc9d9;
+  height: 2rem;
+  border-radius: 8px;
+}
+
+.button {
+  outline: none;
+  border: none;
+}
+
+.checkOut {
+  background-color: var(--color-red);
+}
+
+.checkOut:hover {
+  background-color: #a32632 !important;
+}
+
+.checkIn:hover {
+  background-color: var(--color-red) !important;
+  color: #fff !important;
+}
+/* END COMPONENT INPUT ORDER */
+
+/* COMPONENT SIGN UP */
+.signUpContent {
+  width: 27rem !important;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.inputSign:focus {
+  border-color: var(--color-red) !important;
+  box-shadow: none !important;
+}
+/* END COMPONENT SIGN UP */
+
+/* COMPONENT SIGN IN */
+.signInContent {
+  width: 27rem !important;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}
+/* END COMPONENT SIGN IN */
+
+/* COMPONENT FOOTER */
+.informationFooter ul li {
+  list-style: none;
+}
+
+.customerFooter ul li {
+  list-style: none;
+}
+
+.contactFooter ul li {
+  width: 2rem;
+  list-style: none;
+}
+/* END COMPONENT FOOTER */
+
+/* responsive */
+@media (max-width: 428px) {
+  /* COMPONENT NAVBAR */
+  .logoBanner {
+    width: 9rem !important;
   }
-  to {
-    transform: rotate(360deg);
+  /* END COMPONENT NAVBAR */
+
+  /* COMPONENT SEARCH BAR */
+  .inputSearchBar input {
+    display: none;
   }
+
+  .searchBar button {
+    display: none;
+  }
+
+  .iconSearch1 {
+    display: contents;
+  }
+  /* END COMPONENT SEARCH BAR */
+
+  /* COMPONENT CAROUSEL IMAGE */
+  .carouselImage {
+    height: 6rem !important;
+  }
+  /* END COMPONENT CAROUSEL IMAGE */
+
+  /* COMPONENT PRODUCT PROMO CARD */
+  .promoCard {
+    width: 11rem !important;
+  }
+  /* END COMPONENT PRODUCT PROMO CARD */
+
+  /* COMPONENT PRODUCT  CARD */
+  .cardProduct {
+    width: 11rem !important;
+  }
+  /* END COMPONENT PRODUCT  CARD */
+
+  /* COMPONENT SIGN UP */
+  .signUpContent {
+    width: 22rem !important;
+  }
+  /* END COMPONENT SIGN UP */
+
+  /* COMPONENT SIGN IN */
+  .signInContent {
+    width: 22rem !important;
+  }
+  /* END COMPONENT SIGN IN */
+
+  /* COMPONENT FOOTER */
+  .aboutFooter img {
+    width: 65px;
+  }
+  /* END COMPONENT FOOTER */
 }

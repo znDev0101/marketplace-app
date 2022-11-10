@@ -1,0 +1,16 @@
+{
+  "popularProduct": [
+    {
+      "electronic": "Mi Brands",
+      "perawatanTubuh": "citra",
+      "game": "playstation"
+    }
+  ],
+  "promo": [
+    {
+      "shoes": "converse",
+      "smartphone": "samsung",
+      "laptop": "hp"
+    }
+  ]
+}

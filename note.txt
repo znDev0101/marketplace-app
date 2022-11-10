@@ -1,0 +1,9 @@
+1. Bagian category kurang rapih
+tombol checkout di cartshopping
+penambahan pagination di image carousel product
+tampilan modal keranjang product
+pada saat menekan tambah keranjang harus value harus oper ke kerangan yang di navbar
+tampilan detail barang
+tampilan height carousel teralalu kecil di hanphone
+perbaiki halaman sign up pada saat buka di handphone
+tampilan di sign in kurang rapih
